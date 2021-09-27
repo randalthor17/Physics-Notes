@@ -1,0 +1,476 @@
+\documentclass[a4paper]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{fullpage}
+\usepackage{gensymb}
+\title{Physics Formula Sheet}
+\author{randalthor17 }
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+\chapter{Physical Quantities and Their Measurements}
+    \section{Equations of the Vernier Scale: }
+        \subsection{Derivation of the Vernier Constant: }
+            \begin{equation}
+                V_c = \frac{s}{n}
+            \end{equation}
+            where 
+            \begin{description}
+                \item $V_c$ is the Vernier constant,
+                \item $s$ is the lowest value in the main scale, and
+                \item $n$ is the division count of the Vernier scale.
+            \end{description}
+        \subsection{Measuring Length with the Vernier Scale: }
+            \begin{equation}
+                L = M + (V \times V_c)
+            \end{equation}
+            where
+            \begin{description}
+                \item $L$ is the length of the object,
+                \item $M$ is the read of the main scale,
+                \item $V$ is the read of the Vernier scale, and
+                \item $V_c$ is the Vernier constant.
+            \end{description}
+        \subsection{Length of an Object with Measurement Errors: }
+            \begin{equation}
+                L = M + (V \times V_c) - (\pm e)
+            \end{equation}
+            where
+            \begin{description}
+                \item $L$ is actual length of the object,
+                \item $M$ is the read of the main scale,
+                \item $V$ is the read of the Vernier scale,
+                \item $V_c$ is the Vernier constant, and
+                \item $e$ is systematic measurement error.
+            \end{description}
+    \section{Measuring Diameter with a Screw Gauge:}
+        \subsection{Least Count of a Screw Gauge: }
+            \begin{equation}
+                C = \frac{P}{n}
+            \end{equation}
+            where
+            \begin{description}
+                \item $C$ is the least count of the screw gauge.
+                \item $P$ is the pitch of the screw gauge (usually the number is 1 $mm$), and
+                \item $n$ is the division count of the circular scale (usually the count is $100$) .
+            \end{description}
+        \subsection{Diameter of a Wire: }
+            \begin{equation}
+                d = L + n \times c
+            \end{equation}
+            where
+            \begin{description}
+                \item $d$ is the diameter of the wire,
+                \item $L$ is the read on the linear scale,
+                \item $n$ is the division count of the circular scale (usually the count is 100), and
+                \item $C$ is the least count of the screw gauge.
+            \end{description}
+            Using the common values, the equation stands
+            \begin{equation}
+                d = ( L + 0.01 \times C ) \: mm
+            \end{equation}
+            
+    \section{Measurement Errors: }    
+        \subsection{Actual Length of an Object with Measurement Errors: }
+            \begin{equation}
+                L = L_1 - (\pm e)
+            \end{equation}
+            where
+            \begin{description}
+                \item $L$ is actual length of the object,
+                \item $L_1$ is apparent length of the object, and
+                \item $e$ is systematic measurement error.
+            \end{description}
+        \subsection{Absolute Error: }
+            \begin{equation}
+                e_A = L_a ~ L
+            \end{equation}
+            where
+            \begin{description}
+                \item $e_A$ is absolute error,
+                \item $L_a$ is the apparent measured value, and
+                \item $L$ is the actual value.
+            \end{description}
+        \subsection{Relative Error: }
+            \begin{equation}
+                e_R = \frac{e_A}{L} \times 100%
+            \end{equation}
+            where
+            \begin{description}
+                \item $e_R$ is relative error,
+                \item $e_A$ is absolute error, and
+                \item $L$ is the actual value of the measured quantity.
+            \end{description}
+
+
+\chapter{Motion}
+    \section{Basic Definitions: }
+        \begin{enumerate}
+            \item $ \bar{v} = u + at $
+            \item $ a = \frac{v - u}{t} $
+            \item $ \bar{v} = \frac{v + u}{2} $
+        \end{enumerate}
+    \section{Laws of Motion: }
+        \begin{enumerate}
+            \item $ v = u + at $
+            \item $ s = ut + \frac{1}{2}at^2 $
+            \item $ s = ( \frac{u + v}{2} ) t $
+            \item $ v^2 = u^2 + 2as $
+        \end{enumerate}
+    \section{Galileo's Laws: }
+            \begin{enumerate}
+                \item If \(t_{1} = t_{2} \) and \(u = 0 \), then \( h_{1} = h_{2} \)
+                \item $ v \propto t \Rightarrow \frac{v_1}{t_1} = \frac{v_2}{t_2} $
+                \item $ h \propto t^2 \Rightarrow \frac{h_1}{t_1^2} = \frac{h_2}{t_2^2} $
+            \end{enumerate}
+    \section{Laws of Falling Bodies: }
+            \begin{enumerate}
+                \item $ v = gt $
+                \item $ h = \frac{1}{2}gt^2 $
+                \item $ v^2 = 2gh $
+            \end{enumerate}
+    \section{Laws of Thrown Bodies: }
+    \begin{enumerate}
+        \item $ v = u - gt $
+        \item $ h = ut - \frac{1}{2}gt^2 $
+        \item $ v^2 = u^2 = 2gh $
+        \item $ H = \frac{u^2}{2g} $
+        \item $ t = \frac{u}{u} $
+        \item $ T = \frac{2u}{g}$
+    \end{enumerate}
+
+
+
+\chapter{Force}
+    \section{The Statements Of Newton's Laws: }
+        \subsection{1st Law: }
+            \begin{quotation}
+                \item If external force is not applied, every object at rest will always stay at rest and every moving object will always move at the same velocity.
+            \end{quotation}
+        \subsection{2nd Law: }
+            \begin{quotation}
+                \item The rate of change of momentum of an object is proportionate to the force applied to the said object, and the direction of the change of the momentum occurs in the direction of the applied force.
+            \end{quotation}
+        \subsection{3rd Law: }
+            \begin{quotation}
+                \item Every action has an equal and opposite reaction.
+            \end{quotation}
+    
+    \section{Momentum and Conservation: }
+        \subsection{Definition of Momentum: }
+            \begin{equation}
+                p = mv
+            \end{equation}
+        \subsection{Definition of Kinetic Energy: }
+            \begin{equation}
+                E_k = \frac{1}{2}m v^2
+            \end{equation}
+        \subsection{Conservation of Momentum: }
+            \begin{equation}
+                m_1 u_1 + m_2 u_2 = m_1 v_1 + m_2 v_2
+            \end{equation}
+        \subsection{Conservation of Kinetic Energy: }
+            \begin{equation}
+                \frac{1}{2} m_1 u_1^2 + \frac{1}{2} m_2 u_2^2 = \frac{1}{2} m_1 v_1^2 + \frac{1}{2} m_2 v_2^2
+            \end{equation}
+        \subsection{Velocity of Objects after Collision: }
+            \begin{equation}
+                v_1 = \frac{(m_1 - m_2)u_1 + 2 m_2 u_2}{m_1 + m_2}
+            \end{equation}
+            \begin{equation}
+                v_2 = \frac{(m_2 - m_2)u_2 + 2 m_1 u_1}{m_1 + m_2}
+            \end{equation}
+    \section{Mathematical Forms of Newton's Laws: }
+        \subsection{1st Law: }
+            If
+            \begin{equation}
+                \vec{F}=0
+            \end{equation}
+            , then
+            \begin{equation}
+                \vec{a}=0
+            \end{equation}
+        \subsection{2nd Law: }
+            \begin{equation}
+                F = \frac{mv-mu}{t} = ma
+            \end{equation}
+        \subsection{3rd Law: }
+            \begin{equation}
+                \vec{F_1} = -\vec{F_2}
+            \end{equation}
+    \section{Gravity: }
+        \subsection{Derivation of the Gravitational Force: }
+        
+            Gravitational force, $ F \propto m1 m_2 $ and $ F \propto \frac{1}{r^2} $ . So we get,
+            \[ F \propto \frac{m_1 m_2}{r^2} \]
+            \[ \Rightarrow  F = k \frac{m_1 m_2}{r^2} \]
+            \begin{equation}
+               \Rightarrow  F = G \frac{m_1 m_2}{r^2} 
+            \end{equation}
+            where $G$ is the Gravitational Constant, which has a value of $ 6.673 \times 10^{-11}$ $N m^2 s^{-2} $
+            
+            
+            In case of a planet and another object, the gravitational force will be
+            \begin{equation}
+                F = G \frac{M m}{R^2}
+            \end{equation}
+        
+        \subsection{Equations of Gravitational Acceleration: }
+            \subsubsection{Gravitational Acceleration at Surface: }
+                \begin{equation}
+                    g = \frac{GM}{R^2}
+                \end{equation}
+            \subsubsection{Gravitational Acceleration above surface: }
+                \begin{equation}
+                    g' = \frac{GM}{(R+h)^2} = \frac{g}{(1+\frac{h}{R})^2}
+                \end{equation}
+            \subsection{Gravitational Acceleration under Surface: }
+                \begin{equation}
+                    g' = \frac{GM}{(R-h)^2} = g(1-\frac{h}{R})
+                \end{equation}
+        \subsection{Weight of an Object: }
+            \begin{equation}
+                W = mg
+            \end{equation}
+    \section{Springs: }
+        \subsection{Force applied by a spring: }
+            \begin{equation}
+                F = -kx
+            \end{equation}
+        \subsection{Potential Energy Stored in a Spring: }
+            \begin{equation}
+                E_s = \frac{1}{2}kx^2
+            \end{equation}
+   \section{Friction: }
+        \subsection{Derivation of the Static Friction Coefficient: }
+            \begin{equation}
+                \mu_s = \frac{F_s}{mg}
+            \end{equation}
+        \subsection{Derivation of the Sliding Friction Coefficient: }
+            \begin{equation}
+                \mu_k = \frac{F_k}{mg}
+            \end{equation}
+        \subsection{Acceleration of an Object on a Surface that has Friction: }
+            \begin{equation}
+                a = \frac{F-F_k}{m}
+            \end{equation}
+   
+\chapter{Work, Power and Energy}
+    \section{Derivation of Work and Energy: }
+        \subsection{Derivation of Work: }
+            \begin{equation}
+                W = Fs \ cos\theta
+            \end{equation}
+        \subsection{Derivation of Potential Energy from Height: }
+            \begin{equation}
+                E_p = mgh
+            \end{equation}
+        \subsection{Potential Energy Stored in a Spring: }
+            \begin{equation}
+                V = \frac{1}{2} kx^2
+            \end{equation}
+        \subsection{Derivation of Kinetic Energy: }
+            \begin{equation}
+                E_k = \frac{1}{2}mv^2
+            \end{equation}
+        \subsection{Relation between Kinetic Energy and Work: }
+            \begin{equation}
+                \frac{1}{2} mv^2 = \frac{1}{2} mu^2 + W
+            \end{equation}
+    \section{Conservation of Energy and Mass: }
+        \subsection{Conservation of Kinetic Energy: }
+            \begin{equation}
+                \frac{1}{2} m_1 u_1^2 + \frac{1}{2} m_2 u_2^2 = \frac{1}{2} m_1 v_1^2 + \frac{1}{2} m_2 v_2^2
+            \end{equation}
+        \subsection{Relation between Mass and Energy: }
+            \begin{equation}
+                E = mc^2
+            \end{equation}
+    \section{Power and Efficiency: }
+        \subsection{Derivation of Power: }
+            \begin{equation}
+                P = \frac{W}{t}
+            \end{equation}
+        \subsection{Derivation of Efficiency: }
+            \begin{equation}
+                \eta = \frac{E_a}{E} = \frac{E - E_w}{E}
+            \end{equation}
+            where
+            \begin{description}
+                \item $\nu$ is the efficiency.
+                \item $E$ is the applied energy,
+                \item $E_a$ is the available energy, and
+                \item $E_w$ is the wasted energy.
+            \end{description}
+            
+\chapter{States of Matter and Pressure}
+    \section{Derivation of Pressure and Density: }
+        \subsection{Derivation of Pressure: }
+            \begin{equation}
+                P = \frac{F}{A}
+            \end{equation}
+        \subsection{Derivation of Density: }
+            \begin{equation}
+                \rho = \frac{m}{V}
+            \end{equation}
+        \subsection{Pressure felt on a Point on a Column of Fluid: }
+            \begin{equation}
+                P = h \rho g
+            \end{equation}
+        \subsection{Force applied by a Column of Standing Fluid: }
+            \begin{equation}
+                F = Ah \rho g = V \rho g
+            \end{equation}
+    \section{Pistons and Pascal's Law: }
+        \subsection{Pascal's Law: }
+            \begin{quotation}
+                The external pressure applied to an enclosed fluid at rest is transmitted equally in all directions throughout the fluid, and the pressure works vertically on the surface of the enclosure.
+            \end{quotation}
+        \subsection{Mechanical Advantage of a pair of Hydraulic Pistons: }
+            \begin{equation}
+                M.A. = \frac{F_2}{F_1} = \frac{A_2}{A_1}
+            \end{equation}
+        \subsection{Mechanical Advantage of a Hydraulic Press: }
+            \begin{equation}
+                M.A. = \frac{F_2}{F_1} = \frac{A_2}{A_1} \times \frac{y}{x}
+            \end{equation}
+    \section{Derivation of Buoyancy: }
+        \subsection{Archimedes' Principle: }
+            \begin{quotation}
+                Any object partially or fully submerged in a fluid loses an amount of weight that is equal to the weight of the fluid expelled by said object.
+            \end{quotation}
+        \subsection{Mass of the Fluid expelled by an Object: }
+            \begin{equation}
+                m = V \rho
+            \end{equation}
+        \subsection{Weight of the Fluid expelled by an Object: }
+            \begin{equation}
+                W = V \rho g
+            \end{equation}
+        \subsection{Buoyancy on an Object: }
+            \begin{equation}
+                F_b = V \rho g
+            \end{equation}
+        \subsection{Buoyancy on a Cylindrical Object: }
+            \begin{equation}
+                F_b = Ah \rho g
+            \end{equation}
+    \section{Derivation of Specific Gravity: }
+        \subsection{True Specific Gravity of an Object: }
+            As measured against water at $4 \degree C$ and of the same volume and at 1 atm.,
+            \begin{equation}
+                S = \frac{W}{W_{H_2 O}} = \frac{\rho}{\rho_{H_2 O}}
+            \end{equation}
+            where
+            \begin{description}
+                \item $S$ is the true specific gravity of the object,
+                \item $W$ is the weight of the object,
+                \item $W_{H_2 O}$ is the weight of water of the same volume as the object,
+                \item $\rho$ is the density of the object, and
+                \item $\rho_{H_2 O}$ is the density of water.
+            \end{description}
+        \subsection{Apparent Specific Gravity of an Object: }
+            As measured against water at $\theta \degree C$ and of the same volume,
+            \begin{equation}
+                S_{\theta} = \frac{\rho}{\rho_{\theta, H_2 O}}
+            \end{equation}
+            where
+            \begin{description}
+                \item $S_{\theta}$ is the apparent specific gravity of the object,
+                \item $\rho$ is the density of the object, and
+                \item $\rho_{\theta, H_2 O}$ is the density of water at $\theta \degree C$.
+            \end{description}
+            In this case, the true specific gravity stands
+            \begin{equation}
+                S = S_{\theta} \times \rho_{\theta, H_2 O}
+            \end{equation}
+    \section{Stress and Strain: }
+        \subsection{Derivation of Strain: }
+            \begin{equation}
+                e = \frac{\Delta L}{L_0} = \frac{L-L_0}{L_0}
+            \end{equation}
+            where
+            \begin{description}
+                \item $e$ is the strain on the length of the object,
+                \item $\Delta L$ is the change in length of the object,
+                \item $L$ is the new length of the object, and
+                \item $L_0$ is the original length of the object
+            \end{description}
+        \subsection{Derivation of Stress: }
+            \begin{equation}
+                \sigma = \frac{T}{A}
+            \end{equation}
+            where
+            \begin{description}
+                \item $\sigma$ is the stress on the object,
+                \item $T$ is the tension, ie. force applied on the object, and
+                \item $A$ is the area on which the force is applied.
+            \end{description}
+        \subsection{Hooke's Law of Stress: }
+            \begin{quotation}
+                The stress on an object is proportional to the strain on the said object.
+            \end{quotation}
+            Mathematical form of Hooke's Law: 
+            \begin{equation}
+                \sigma \propto e
+            \end{equation}
+        \subsection{Cases of Hooke's Law of Stress: }
+            \subsubsection{In Case of Solids: }
+                \begin{equation}
+                    \sigma = Ye
+                \end{equation}
+                where
+                \begin{description}
+                    \item $\sigma$ is the stress on the solid,
+                    \item $Y$ is the Young's Modulus of the solid, and
+                    \item $e$ is the strain on the solid.
+                \end{description}
+            \subsubsection{In case Of Fluids: }
+                \begin{equation}
+                    P = \sigma = B (\frac{\Delta V}{V}) = B e
+                \end{equation}
+                where
+                \begin{description}
+                    \item $\sigma$ is the stress on of the fluid, which is equal to pressure $P$ in case of fluids,
+                    \item $e$ is the strain on of the fluid, which is equal to the rate of change of volume $\frac{\Delta V}{V}$  in case of fluids, and
+                    \item $B$ is the Bulk Modulus of the fluid.
+                \end{description}
+        
+\addtocounter{chapter}{1}
+\chapter{Waves and Sound}
+    \subsection{Simple Harmonic Motion:}
+        \subsubsection{Hooke's Law of Springs:}
+            \begin{equation}
+                F = -kx
+            \end{equation}
+        \subsubsection{Oscillation Period of a Spring:}
+            \begin{equation}
+                T = 2 \pi \sqrt{\frac{m}{k}}
+            \end{equation}
+        \subsubsection{Oscillation Period of a Simple Pendulum:}
+            \begin{equation}
+                T = 2 \pi \sqrt{\frac{l}{g}}
+            \end{equation}
+        \subsubsection{Frequency of a Simple Harmonic Oscillator:}
+            \begin{equation}
+                f = \frac{1}{T} = \frac{N}{t}
+            \end{equation}
+    \subsection{Equations of Sound Waves:}
+        \subsubsection{Frequency of a Wave: }
+            \begin{equation}
+                f = \frac{1}{T} = \frac{N}{t}
+            \end{equation}
+        \subsubsection{Velocity of a Wave: }
+            \begin{equation}
+                v = \frac{\lambda}{T} = f \lambda
+            \end{equation}
+        \subsubsection{Relation between Temperature of Air and the Velocity of Sound: }
+            \begin{equation}
+                v \propto \sqrt{T} \Rightarrow \frac{v_1}{v_2} = \sqrt{\frac{T_1}{T_2}}
+            \end{equation}
+            On the old textbooks, the approximation for this equation was given as:
+            \begin{equation}
+                v = v_0 + 0.6 \Delta T
+            \end{equation}
+\end{document}
