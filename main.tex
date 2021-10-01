@@ -2,6 +2,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage{fullpage}
 \usepackage{gensymb}
+\usepackage{amsmath}
 \title{Physics Formula Sheet}
 \author{randalthor17 }
 
@@ -523,5 +524,136 @@
                 m = |\frac{v}{u}| = \frac{l'}{l}
             \end{equation}
 
+\addtocounter{chapter}{2}
+\chapter{Current Electricity}
+    \section{Electric Current, Voltage and Resistance:}
+        \subsection{Derivation of Electric Current:}
+            \begin{equation}
+                I = \frac{Q}{t}
+            \end{equation}
+            where
+            \begin{description}
+                \item $I$ is the resultant electric current flowing through a conductor,
+                \item $Q$ is the amount of charge flowing through the conductor within a specific amount of time, and
+                \item $t$ is the specific amount of time. 
+            \end{description}
+        \subsection{Derivation of Electromotive Force:}
+            \begin{equation}
+                EMF = V = \frac{W}{Q}
+            \end{equation}
+            where
+            \begin{description}
+                \item $EMF$ is the electromotive force of the electric cell,
+                \item $V$ is the electric potential difference between the two points of the cell, and
+                \item $W$ is the work done to move $Q$ amounts of charge from the end having the least potential to the end having the most potential of the cell. 
+            \end{description}
+            \subsubsection{Electromotive Force of a Cell having Internal Resistance:}
+                \begin{equation}
+                    EMF = I(R + r)
+                \end{equation}
+                where $R$ is the resistance of the circuit and $r$ is the internal resistance of the cell.
+        \subsection{Ohm's Law:}
+            \begin{quotation}
+                In a fixed temperature, the current through a conductor between two points is directly proportional to the potential difference across the two points.
+            \end{quotation}
+            In mathematical terms,
+            \begin{align*}
+                I \propto V \\
+                \Rightarrow I = GV 
+            \end{align*}
+            where
+            \begin{description}
+                \item $G$ is the conductance of the conductor, and
+                \item $R$ is the resistance of the conductor, which is equal to $\frac{1}{G}$. 
+            \end{description}
+            From this we can say that
+            \begin{equation}
+                I = \frac{V}{R}
+            \end{equation}
+            which is the mathematical form of the Ohm's Law.
+        \subsection{Laws of Resistance:}
+            \begin{enumerate}
+                \item $R \propto L$ where $T$ and $A$ are constant.
+                \item $R \propto \frac{1}{A}$ where $T$ and $L$ are constant.
+            \end{enumerate}
+            From the 2 rules above, we can say that
+            \begin{equation*}
+                R \propto \frac{L}{A}
+            \end{equation*}
+            \begin{equation}
+                \Rightarrow R = \rho \frac{L}{A}
+            \end{equation}
+            where $\rho$ is the conductor's resistivity and $\sigma$ is the conductivity of the conductor, which is defined as $\frac{1}{\rho}$.
+    \section{Circuit Laws:}
+        \subsection{Total Resistance of a Set of Joined Resistors:}
+            \subsubsection{Series Combination:}
+                \begin{equation}
+                    R = R_1 + R_2 + R_3 + ... + R_n = \sum_{n = 1}^n R_n
+                \end{equation}
+            \subsubsection{Parallel Combination:}
+                \begin{equation}
+                    R = (\frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3} + ... + \frac{1}{R_n})^{-1} = (\sum_{n = 1}^{n} \frac{1}{R_n})^{-1}
+                \end{equation}
+        \subsection{Total Current Flow through a Set of Joined Resistors:}
+            \subsubsection{Series Combination:}
+                \begin{equation}
+                    I = I_1 + I_2 + I_3 + ... + I_n = \sum_{n = 1}^n I_n
+                \end{equation}
+            \subsubsection{Parallel Combination:}
+                \begin{equation}
+                    I = V(\frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3} + ... + \frac{1}{R_n})^{-1} = V \sum_{n = 1}^{n} \frac{1}{R_n}
+                \end{equation}
+        \subsection{Total Potential Difference between 2 Endpoints of a Set of Joined Resistors:}
+            \subsubsection{Series Combination:}
+                \begin{equation}
+                    V = V_1 + V_2 + V_3 + ... + V_n = \sum_{n = 1}^n V_n 
+                \end{equation}
+            \subsubsection{Parallel Combination:}
+                \begin{equation}
+                    V = V_1 = V_2 = V_3 = ... = V_n
+                \end{equation}
+        \subsection{Total Capacitance of a Set of Joined Capacitors:}
+            \subsubsection{Series Combination:}    
+                \begin{equation}
+                    C = (\frac{1}{C_1} + \frac{1}{C_2} + \frac{1}{C_3} + ... + \frac{1}{C_n})^{-1} = (\sum_{n = 1}^n \frac{1}{C_n})^{-1}
+                \end{equation}
+            \subsubsection{Parallel Combination:}
+                \begin{equation}
+                    C = C_1 + C_2 + C_3 + ... + C_n = \sum_{n = 1}^n C_n
+                \end{equation}
+        \subsection{Kirchhoff's Laws:}
+            \subsubsection{Kirchhoff's Current Law:}
+                \begin{quotation}
+                    The algebraic sum of current flow in a node of conductors is zero.
+                \end{quotation}
+                In layman's terms, in a node of conductors, the total current flowing towards the node must be equal to the total current flowing out of the said node. In mathematical terms,
+                \begin{equation}
+                    \sum I = 0
+                \end{equation}
+            \subsubsection{Kirchhoff's Voltage Law:}
+                \begin{quotation}
+                    The algebraic sum of all potential differences around any closed loop is zero.
+                \end{quotation}
+                In layman's terms, in a closed loop of multiple resistors, the algebraic sum of all the potential differences in each resistor must be zero. In mathematical terms,
+                \begin{equation}
+                    \sum V = 0
+                \end{equation}
+    \section{Work and Energy in Circuits:}
+        \subsection{Work Done by a Circuit:}
+            \begin{equation}
+                W = VQ
+            \end{equation}
+        \subsubsection{Derivation of Electric Power:}
+            \begin{equation}
+                P = \frac{W}{t} = \frac{VQ}{t} = VI = \frac{V^2}{R} = I^2 R 
+            \end{equation}
+        \subsection{Energy Used by a Circuit:}
+            \begin{equation}
+                E = Pt
+            \end{equation}
+        \subsection{Heat Produced by a Circuit:}
+            \begin{equation}
+                H = VIt = \frac{V^2}{R}t = I^2 Rt = Pt
+            \end{equation}
 
 \end{document}
