@@ -107,42 +107,97 @@
 
 \chapter{Motion}
     \section{Basic Definitions: }
+        These are the basic symbols that are used in the following equations.
         \begin{enumerate}
-            \item $ \bar{v} = u + at $
-            \item $ a = \frac{v - u}{t} $
-            \item $ \bar{v} = \frac{v + u}{2} $
-            \item $ \bar{v} = \frac{2}{\frac{1}{v_1} + \frac{1}{v_2}} $
+        \item $u$ is the initial velocity of the object,
+        \item $v$ is the resultant velocity of the object,
+        \item $\bar{v}$ is the average velocity of the object,
+        \item $a$ is the acceleration of the object,
+        \item $s$ is the displacement of the object, and
+        \item $t$ is the time passed.
         \end{enumerate}
+        Now, the basic definitions of some of these terms are as follows:
+        \subsection{Average Velocity: }
+            \begin{equation}
+                \bar{v} = \frac{s}{t} = \frac{2}{\frac{1}{v_1} + \frac{1}{v_2}}
+            \end{equation}
+        \subsection{Acceleration: }
+            \begin{equation}
+            a = \frac{v - u}{t}
+            \end{equation}
+        \subsection{Displacement: }
+            \begin{equation}
+                s = (\frac{v + u}{2}) t = ut + \frac{1}{2}at^2
+            \end{equation}
     \section{Laws of Motion: }
-        \begin{enumerate}
-            \item $ v = u + at $
-            \item $ s = ut + \frac{1}{2}at^2 $
-            \item $ s = ( \frac{u + v}{2} ) t $
-            \item $ v^2 = u^2 + 2as $
-        \end{enumerate}
+        The terms displacement($s$), initial velocity($u$), resultant velocity($v$), acceleration($a$) and time($t$) can be derived individually from the following equations if the other terms are given. These equations are known as the SUVAT equations or the laws of motion. The equations are as follows:
+        \\
+        \begin{eqnarray}
+            &v = u + at \\
+            &s = ut + \frac{1}{2}at^2 = (\frac{u + v}{2})t \\
+            &v^2 = u^2 + 2as
+        \end{eqnarray}
     \section{Galileo's Laws: }
-            \begin{enumerate}
-                \item If \(t_{1} = t_{2} \) and \(u = 0 \), then \( h_{1} = h_{2} \)
-                \item $ v \propto t \Rightarrow \frac{v_1}{t_1} = \frac{v_2}{t_2} $
-                \item $ h \propto t^2 \Rightarrow \frac{h_1}{t_1^2} = \frac{h_2}{t_2^2} $
-            \end{enumerate}
+        Galileo derived these laws from the laws of motion, and these apply for any object that is free-falling as long as there's no air friction.
+        \subsection{1st Law: }
+            \begin{quotation}
+                \item In a vaccum, any free-falling object (i.e having no initial velocity) will traverse the same amount of height in the same amount of time.
+            \end{quotation}
+            Meaning, if \\
+            \begin{equation*}
+                u = 0 \textrm{ and } t_1 = t_2
+            \end{equation*}
+            then \\
+            \begin{equation}
+                h_1 = h_2
+            \end{equation}
+        \subsection{2nd Law: }
+            \begin{quotation}
+                \item Starting from rest, the velocity of a free-falling body is proportional to the time it takes to fall.
+            \end{quotation}
+            In equation form, \\
+            \begin{equation}
+                v \propto t \quad \Rightarrow \quad \frac{v_1}{t_1} = \frac{v_2}{t_2}
+            \end{equation}
+        \subsection{3rd Law: }
+            \begin{quotation}
+                \item Starting from rest, the height traversed by a free-falling body is proportional to the square of the time it takes to fall.
+            \end{quotation}
+            In equation form, \\
+            \begin{equation}
+                h \propto t^2 \quad \Rightarrow \quad \frac{h_1}{t_1^2} = \frac{h_2}{t_2^2}
+            \end{equation}
     \section{Laws of Falling Bodies: }
-            \begin{enumerate}
-                \item $ v = gt $
-                \item $ h = \frac{1}{2}gt^2 $
-                \item $ v^2 = 2gh $
-            \end{enumerate}
+        In case of free-falling bodies, the acceleration on the falling object is the gravitational acceleration $g$, the initial velocity $u$ is zero, and the displacement of the object is the height traversed which is $h$. Plugging these values into the laws of motion gives us the following equations, that we may call the laws of falling bodies:
+        \\
+        \begin{eqnarray}
+            &v = gt \\
+            &h = \frac{1}{2}gt^2 \\
+            &v^2 = 2gh
+        \end{eqnarray}
     \section{Laws of Thrown Bodies: }
-    \begin{enumerate}
-        \item $ v = u - gt $
-        \item $ h = ut - \frac{1}{2}gt^2 $
-        \item $ v^2 = u^2 = 2gh $
-        \item $ H = \frac{u^2}{2g} $
-        \item $ t = \frac{u}{g} $
-        \item $ T = \frac{2u}{g}$
-    \end{enumerate}
-
-
+        In case of thrown bodies, the acceleration acting of the object is actually $-g$, as the accelerationis acting in the opposite way of the object's initial velocity. The initial velocity of the object is $u$, and the displacement of the object is its height $h$. Plugging these values into the laws of motion gives us the following equations, that we may call the laws of thrown bodies:
+        \\
+        \begin{eqnarray}
+            &v = u - gt \\
+            &h = ut - \frac{1}{2}gt^2 \\
+            &v^2 = u^2 - 2gh
+        \end{eqnarray}
+        \\
+        Also, we can derive some extra equations from these laws, which are as follows:
+        \subsection{The peak of a thrown object's height: }
+            \begin{equation}
+                H = \frac{u^2}{2g}
+            \end{equation}
+        \subsection{The time taken to ascend to the peak of the height: }
+            \begin{equation}
+                t = \frac{u}{g}
+            \end{equation}
+        \subsection{The total fall time of a thrown object: }
+            \begin{equation}
+                T = \frac{2u}{g}
+            \end{equation}
+        
 
 \chapter{Force}
     \section{The Statements Of Newton's Laws: }
@@ -204,7 +259,7 @@
     \section{Gravity: }
         \subsection{Derivation of the Gravitational Force: }
         
-            Gravitational force, $ F \propto m1 m_2 $ and $ F \propto \frac{1}{r^2} $ . So we get,
+            Gravitational force, $ F \propto m_1 m_2 $ and $ F \propto \frac{1}{r^2} $ . So we get,
             \[ F \propto \frac{m_1 m_2}{r^2} \]
             \[ \Rightarrow  F = k \frac{m_1 m_2}{r^2} \]
             \begin{equation}
@@ -257,7 +312,8 @@
             \begin{equation}
                 a = \frac{F-F_k}{m}
             \end{equation}
-   
+
+            
 \chapter{Work, Power and Energy}
     \section{Derivation of Work and Energy: }
         \subsection{Derivation of Work: }
@@ -305,6 +361,7 @@
                 \item $E_a$ is the available energy, and
                 \item $E_w$ is the wasted energy.
             \end{description}
+
             
 \chapter{States of Matter and Pressure}
     \section{Derivation of Pressure and Density: }
@@ -440,6 +497,8 @@
                 \end{description}
         
 \addtocounter{chapter}{1}
+
+
 \chapter{Waves and Sound}
     \subsection{Simple Harmonic Motion:}
         \subsubsection{Hooke's Law of Springs:}
@@ -475,6 +534,7 @@
             \begin{equation}
                 v = v_0 + 0.6 \Delta T
             \end{equation}
+
 
 \chapter{Reflection of Light}
     \subsection{Laws of Reflection: }
@@ -526,6 +586,8 @@
             \end{equation}
 
 \addtocounter{chapter}{2}
+
+
 \chapter{Current Electricity}
     \section{Electric Current, Voltage and Resistance:}
         \subsection{Derivation of Electric Current:}
@@ -657,4 +719,5 @@
                 H = VIt = \frac{V^2}{R}t = I^2 Rt = Pt
             \end{equation}
 
+            
 \end{document}
