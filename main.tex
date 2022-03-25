@@ -157,7 +157,7 @@
             \end{quotation}
             In equation form, \\
             \begin{equation}
-                v \propto t \quad \Rightarrow \quad \frac{v_1}{t_1} = \frac{v_2}{t_2}
+                v \propto t \quad \implies \quad \frac{v_1}{t_1} = \frac{v_2}{t_2}
             \end{equation}
         \subsection{3rd Law: }
             \begin{quotation}
@@ -165,7 +165,7 @@
             \end{quotation}
             In equation form, \\
             \begin{equation}
-                h \propto t^2 \quad \Rightarrow \quad \frac{h_1}{t_1^2} = \frac{h_2}{t_2^2}
+                h \propto t^2 \quad \implies \quad \frac{h_1}{t_1^2} = \frac{h_2}{t_2^2}
             \end{equation}
     \section{Laws of Falling Bodies: }
         In case of free-falling bodies, the acceleration on the falling object is the gravitational acceleration $g$, the initial velocity $u$ is zero, and the displacement of the object is the height traversed which is $h$. Plugging these values into the laws of motion gives us the following equations, that we may call the laws of falling bodies:
@@ -258,16 +258,13 @@
             \end{equation}
     \section{Gravity: }
         \subsection{Derivation of the Gravitational Force: }
-        
             Gravitational force, $ F \propto m_1 m_2 $ and $ F \propto \frac{1}{r^2} $ . So we get,
             \[ F \propto \frac{m_1 m_2}{r^2} \]
-            \[ \Rightarrow  F = k \frac{m_1 m_2}{r^2} \]
+            \[ \implies  F = k \frac{m_1 m_2}{r^2} \]
             \begin{equation}
-               \Rightarrow  F = G \frac{m_1 m_2}{r^2} 
+               \implies  F = G \frac{m_1 m_2}{r^2} 
             \end{equation}
             where $G$ is the Gravitational Constant, which has a value of $ 6.673 \times 10^{-11}$ $N m^2 s^{-2} $
-            
-            
             In case of a planet and another object, the gravitational force will be
             \begin{equation}
                 F = G \frac{M m}{R^2}
@@ -280,12 +277,39 @@
                 \end{equation}
             \subsubsection{Gravitational Acceleration above surface: }
                 \begin{equation}
-                    g' = \frac{GM}{(R+h)^2} = \frac{g}{(1+\frac{h}{R})^2}
+                    g' = \frac{GM}{(R+h)^2}
                 \end{equation}
-            \subsection{Gravitational Acceleration under Surface: }
+                From this equation and equation (3.13), we can say that % TODO: add automatic equation numbering
                 \begin{equation}
-                    g' = \frac{GM}{(R-h)^2} = g(1-\frac{h}{R})
+                    \frac{g'}{g} = \frac{R^2}{(R+h)^2} = (1 + \frac{h}{R})^{-2}
                 \end{equation}
+                If $h << R$, then
+                \begin{align}
+                    \frac{g'}{g} \approx 1 - \frac{2h}{R} \nonumber \\
+                    \implies g' = g (1-\frac{2h}{R})
+                \end{align}
+            \subsubsection{Gravitational Acceleration under Surface: }
+                Assuming the earth's density to be uniform, the volume of the whole earth its
+                \begin{equation}
+                   V = \frac{4}{3}\pi  R^3
+                \end{equation}
+                And its mass is
+                \begin{equation}
+                    M = V\rho = \frac{4}{3}\pi  R^3 \rho
+                \end{equation}
+                So, the usual gravitational acceleration at the surface is
+                \begin{equation}
+                    g = \frac{GM}{R^2} = \frac{4}{3}\pi  \frac{GR^3}{R^2} \rho = \frac{4}{3}\pi GR \rho
+                \end{equation}
+                In the same logic, the gravitational acceleration below the surface is
+                \begin{equation}
+                    g' = \frac{GM'}{(R-h)^2} = \frac{4}{3}\pi G(R-h) \rho
+                \end{equation}
+                Comparing equations (3.19) and 3.20, we can see that
+                \begin{align}
+                    \frac{g'}{g} = \frac{R-h}{R} \nonumber \\
+                    \implies g' = g (1 - \frac{h}{R})
+                \end{align}
         \subsection{Weight of an Object: }
             \begin{equation}
                 W = mg
@@ -528,7 +552,7 @@
             \end{equation}
         \subsubsection{Relation between Temperature of Air and the Velocity of Sound: }
             \begin{equation}
-                v \propto \sqrt{T} \Rightarrow \frac{v_1}{v_2} = \sqrt{\frac{T_1}{T_2}}
+                v \propto \sqrt{T} \implies \frac{v_1}{v_2} = \sqrt{\frac{T_1}{T_2}}
             \end{equation}
             On the old textbooks, the approximation for this equation was given as:
             \begin{equation}
@@ -622,7 +646,7 @@
             In mathematical terms,
             \begin{align*}
                 I \propto V \\
-                \Rightarrow I = GV 
+                \implies I = GV 
             \end{align*}
             where
             \begin{description}
@@ -644,7 +668,7 @@
                 R \propto \frac{L}{A}
             \end{equation*}
             \begin{equation}
-                \Rightarrow R = \rho \frac{L}{A}
+                \implies R = \rho \frac{L}{A}
             \end{equation}
             where $\rho$ is the conductor's resistivity and $\sigma$ is the conductivity of the conductor, which is defined as $\frac{1}{\rho}$.
     \section{Circuit Laws:}
